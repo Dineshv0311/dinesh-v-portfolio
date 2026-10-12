@@ -1,5 +1,6 @@
 # Dinesh V — Studio Portfolio
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dineshv0311/dinesh-v-portfolio)
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dineshv0311/dinesh-v-portfolio)
 
 A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Architect & AI Developer based in Chennai, India. Built with Next.js 14 App Router, TypeScript (strict mode), Tailwind CSS, Framer Motion, and Three.js — designed with inspiration from [igloo.inc](https://www.igloo.inc/).
