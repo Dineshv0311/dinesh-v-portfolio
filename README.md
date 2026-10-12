@@ -1,9 +1,13 @@
-# Dinesh V — Portfolio Website
+# Dinesh V — Studio Portfolio
 
-A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Developer & AI Solutions Developer based in Chennai, India. Built with Next.js 14 App Router, TypeScript (strict mode), Tailwind CSS, Framer Motion, and Three.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dineshv0311/dinesh-v-portfolio)
 
-## 🚀 Live Demo & Repository
-- **GitHub**: [github.com/Dineshv0311](https://github.com/Dineshv0311)
+A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Architect & AI Developer based in Chennai, India. Built with Next.js 14 App Router, TypeScript (strict mode), Tailwind CSS, Framer Motion, and Three.js — designed with inspiration from [igloo.inc](https://www.igloo.inc/).
+
+---
+
+## 🌐 Live Repository & Contact
+- **GitHub Repository**: [github.com/Dineshv0311/dinesh-v-portfolio](https://github.com/Dineshv0311/dinesh-v-portfolio)
 - **LinkedIn**: [linkedin.com/in/dinesh-v-486367289](https://www.linkedin.com/in/dinesh-v-486367289)
 - **Email**: [dineshv.public@gmail.com](mailto:dineshv.public@gmail.com)
 
@@ -12,72 +16,78 @@ A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Deve
 ## 🧱 Tech Stack
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript (strict mode throughout)
-- **Styling**: Tailwind CSS + Framer Motion (animations & smooth scroll)
-- **Visual / 3D**: Three.js (interactive 3D neural network constellation in hero)
-- **Icons**: Lucide React + React Icons
-- **Fonts**: Inter + JetBrains Mono
-- **Deployment**: Vercel-ready config
+- **Visual & 3D**: Three.js (interactive 3D Monolithic Iceberg Shard with dynamic lights & mouse parallax)
+- **Styling**: Tailwind CSS + Framer Motion (smooth scroll, telemetry badges, glassmorphism)
+- **Icons**: Lucide React + React Icons (FontAwesome6, SimpleIcons, RemixIcons, TablerIcons)
+- **Deployment**: Vercel-optimized (`vercel.json` included)
 
 ---
 
-## 📁 Project Structure
+## 🏆 Featured Client Ventures
+1. **EduBot Cloud-Native Platform** — Multi-tenant company assessment & SaaS portal on AWS (EC2/S3/RDS/Docker)
+2. **CryptoTransfer Digital Checkout** — Web3 e-commerce & digital payment transaction dApp (MetaMask/Solidity)
+3. **LiveSync Customer Portal** — Real-time WebSocket messaging & client support system (JWT/Node.js)
+
+---
+
+## 📁 Project Architecture
 ```
 /app
-  layout.tsx       # Root layout with fonts, metadata, and custom cursor
-  page.tsx         # Master page combining all sections in order
-  /api/contact     # API route handling inquiries
+  layout.tsx       # Root layout, Inter & JetBrains Mono, SEO metadata, custom cursor
+  page.tsx         # Single-page app with all Igloo-inspired telemetry sections
+  /api/contact     # Serverless contact inquiry endpoint
 /components
   /ui
-    HeroCanvas.tsx      # Three.js 3D constellation & line mesh
-    Card3D.tsx          # 3D interactive tilt cards
-    SectionHeading.tsx  # Animated section titles & glowing pill badges
-    SkillIcon.tsx       # Safe icon mapper
+    IglooShardCanvas.tsx # Three.js 3D Monolithic Crystalline Iceberg Shard
+    Card3D.tsx           # 3D interactive perspective tilt cards
+    SectionHeading.tsx   # Reusable telemetry section headers
+    SkillIcon.tsx        # Safe dynamic icon mapper
   /sections
-    Hero.tsx            # Typing animation, floating tech badges, dual CTAs
-    About.tsx           # Story, avatar with glow ring, animated count-up stats
-    Skills.tsx          # Arsenal breakdown with proficiency bars & filter tabs
-    Projects.tsx        # 5 featured projects with 3D tilt, tags, demo links
-    Services.tsx        # 6 services with starting prices & deliverables
-    WhyHireMe.tsx       # 4 core freelancer feature blocks
-    Testimonials.tsx    # Client ratings, quotes, and avatars
-    Contact.tsx         # Interactive inquiry form + 1-click email copy & confetti
-    Footer.tsx          # Monogram, social row, back-to-top button
-  Navbar.tsx            # Sticky frosted glass, active link indicators, drawer menu
-  ThemeToggle.tsx       # Dark mode default with light mode toggle
-  CustomCursor.tsx      # Custom desktop cursor with trailing glow ring
+    Hero.tsx             # 3D Shard, editorial headline, typing telemetry, coordinates
+    About.tsx            # Studio Manifesto, credentials, count-up stats
+    Skills.tsx           # Technical Arsenal, category filter pills, progress indicators
+    Projects.tsx         # 3 flagship commercial ventures with 3D tilt & live repo links
+    Services.tsx         # Available commission disciplines, starting rates, timelines
+    WhyHireMe.tsx        # 4 Execution pillars (Delivery, Clean Code, Communication, Guarantee)
+    Testimonials.tsx     # Client lookbook & verified reviews
+    Contact.tsx          # Direct commission dispatch terminal with confetti trigger
+    Footer.tsx           # Monumental watermark, live Chennai local time clock
+  Navbar.tsx             # Monogram mark, status indicator, centered capsule navigation
+  ThemeToggle.tsx        # Dark mode default with smooth Sun/Moon switch
+  CustomCursor.tsx       # Desktop custom dot cursor with trailing glow follower
 /lib
-  data.ts          # Central data source for all text, projects & services
+  data.ts          # Centralized portfolio data
   types.ts         # Strict TypeScript definitions
-  utils.ts         # Utility helpers (clsx + tailwind-merge)
+  utils.ts         # Utility helpers
 /styles
-  globals.css      # Glassmorphism, neon shadows, custom scrollbar
+  globals.css      # Obsidian backdrop, arctic gradients, custom scrollbar
 ```
 
 ---
 
-## 🛠️ Getting Started
+## 🚀 Running Locally
 
-### 1. Clone & Install
 ```bash
-git clone https://github.com/Dineshv0311/portfolio.git
-cd portfolio
+# Clone repository
+git clone https://github.com/Dineshv0311/dinesh-v-portfolio.git
+cd dinesh-v-portfolio
+
+# Install dependencies
 npm install
-```
 
-### 2. Run Locally
-```bash
+# Run development server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-### 3. Build for Production
-```bash
-npm run build
-npm run start
-```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🎨 Theme & Customization
-- To update projects, services, skills, or contact info, edit `/lib/data.ts`.
-- Dark mode is enabled by default. Click the sun/moon button in the navbar to toggle themes.
+## ☁️ Recommended Deployment (Vercel)
+
+Click the deploy button above or run:
+
+```bash
+npx vercel
+```
+Or import `https://github.com/Dineshv0311/dinesh-v-portfolio` in [vercel.com/new](https://vercel.com/new).
