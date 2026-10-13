@@ -103,8 +103,7 @@ export const Footer: React.FC = () => {
 
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] text-white/30 pt-4">
         <span>© {new Date().getFullYear()} DINESH V. ALL RIGHTS RESERVED.</span>
-        <span>INSPIRED BY IGLOO.INC ARCHITECTURE</span>
-        <span>DEPLOYED ON VERCEL // CLOUD NATIVE</span>
+        <span>DEPLOYED ON NETLIFY // CLOUD NATIVE</span>
       </div>
     </footer>
   );

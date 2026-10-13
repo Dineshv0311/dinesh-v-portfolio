@@ -1,9 +1,8 @@
 # Dinesh V — Studio Portfolio
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Dineshv0311/dinesh-v-portfolio)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Dineshv0311/dinesh-v-portfolio)
 
-A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Architect & AI Developer based in Chennai, India. Built with Next.js 14 App Router, TypeScript (strict mode), Tailwind CSS, Framer Motion, and Three.js — designed with inspiration from [igloo.inc](https://www.igloo.inc/).
+A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Architect & AI Developer based in Chennai, India. Built with Next.js 14 App Router, TypeScript (strict mode), Tailwind CSS, Framer Motion, and Three.js.
 
 ---
 
@@ -20,7 +19,7 @@ A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Arch
 - **Visual & 3D**: Three.js (interactive 3D Monolithic Iceberg Shard with dynamic lights & mouse parallax)
 - **Styling**: Tailwind CSS + Framer Motion (smooth scroll, telemetry badges, glassmorphism)
 - **Icons**: Lucide React + React Icons (FontAwesome6, SimpleIcons, RemixIcons, TablerIcons)
-- **Deployment**: Vercel-optimized (`vercel.json` included)
+- **Deployment**: Netlify-optimized (`netlify.toml` and `@netlify/plugin-nextjs` included)
 
 ---
 
@@ -35,7 +34,7 @@ A world-class freelancer portfolio website for **Dinesh V**, Full-Stack Web Arch
 ```
 /app
   layout.tsx       # Root layout, Inter & JetBrains Mono, SEO metadata, custom cursor
-  page.tsx         # Single-page app with all Igloo-inspired telemetry sections
+  page.tsx         # Single-page app with modern editorial telemetry sections
   /api/contact     # Serverless contact inquiry endpoint
 /components
   /ui
@@ -84,11 +83,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## ☁️ Recommended Deployment (Vercel)
+## ☁️ Deployment (Netlify)
 
-Click the deploy button above or run:
-
-```bash
-npx vercel
-```
-Or import `https://github.com/Dineshv0311/dinesh-v-portfolio` in [vercel.com/new](https://vercel.com/new).
+Click the **Deploy to Netlify** button above or connect your GitHub repository directly on [Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/Dineshv0311/dinesh-v-portfolio).
+Build command and Next.js plugin configurations are automatically handled by [`netlify.toml`](./netlify.toml).

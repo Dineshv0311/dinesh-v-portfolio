@@ -115,7 +115,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "GitHub Actions", level: 85, iconName: "SiGithubactions" },
       { name: "Linux VPS", level: 88, iconName: "SiLinux", featured: true },
       { name: "Nginx", level: 82, iconName: "SiNginx" },
-      { name: "Vercel", level: 95, iconName: "SiVercel" },
+      { name: "Netlify", level: 95, iconName: "SiNetlify" },
       { name: "Render", level: 90, iconName: "SiRender" },
       { name: "Railway", level: 88, iconName: "SiRailway" },
     ],
@@ -242,7 +242,7 @@ export const servicesData: ServiceItem[] = [
     id: "cloud-devops",
     title: "Cloud Deployment & DevOps",
     description:
-      "Take your project from localhost to a secure production URL on VPS (Ubuntu/Nginx), Render, Railway, or Vercel with automated CI/CD and custom domains.",
+      "Take your project from localhost to a secure production URL on VPS (Ubuntu/Nginx), Render, Railway, or Netlify with automated CI/CD and custom domains.",
     startingPrice: 30,
     iconName: "Cloud",
     features: [
