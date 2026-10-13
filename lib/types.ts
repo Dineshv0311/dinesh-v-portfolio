@@ -29,7 +29,9 @@ export type ProjectCategory =
   | "All"
   | "Company Websites"
   | "E-Commerce & Payments"
-  | "Full-Stack SaaS";
+  | "Full-Stack SaaS"
+  | "AI & Automation"
+  | "Cloud & Systems";
 
 export interface ProjectItem {
   id: string;

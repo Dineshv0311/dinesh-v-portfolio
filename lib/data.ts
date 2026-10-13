@@ -188,7 +188,7 @@ export const projectsData: ProjectItem[] = [
     tagline: "Real-Time Client Communication & Support System",
     description:
       "Enterprise customer messaging and support application built for real-time collaboration. Features instantaneous bi-directional WebSocket messaging, JWT secure authentication, online presence tracking, and clean modern interface built for SaaS and company websites.",
-    categories: ["Company Websites", "Full-Stack SaaS"],
+    categories: ["Company Websites", "Full-Stack SaaS", "Cloud & Systems"],
     tags: ["React", "Vite", "Node.js", "Express", "WebSockets", "JWT"],
     image: "/images/projects/livesync.webp",
     metrics: "<50ms Message Latency • Real-Time",
@@ -199,6 +199,44 @@ export const projectsData: ProjectItem[] = [
       "Sub-50ms instantaneous client communication using native WebSocket protocols",
       "Secure JWT cookie-based session management and authenticated API endpoints",
       "Designed as a plug-and-play live support widget for customer-facing websites",
+    ],
+  },
+  {
+    id: "codemind-ai",
+    title: "CodeMind AI Reviewer",
+    tagline: "Automated Code Review & Vulnerability Detector",
+    description:
+      "Intelligent code analysis system powered by Google Gemini API. Scans multi-language source code for algorithmic bottlenecks, security issues, and style smells, providing instant refactored snippets.",
+    categories: ["AI & Automation", "Full-Stack SaaS"],
+    tags: ["Python", "Flask", "Gemini API", "REST APIs", "Tailwind CSS"],
+    image: "/images/projects/codemind.webp",
+    metrics: "Gemini 1.5 Pro Engine • Sub-2s Audit",
+    githubUrl: "https://github.com/Dineshv0311",
+    liveUrl: "https://github.com/Dineshv0311",
+    featured: true,
+    highlights: [
+      "Direct integration with Google Gemini Pro API for contextual AST code reasoning",
+      "Automated vulnerability detection and inline remediation suggestions",
+      "Lightweight Flask REST backend with high-throughput request handling",
+    ],
+  },
+  {
+    id: "devto-mcp-server",
+    title: "Dev.to MCP Automation Server",
+    tagline: "Headless Content Publishing Agent for Claude Desktop",
+    description:
+      "Custom Model Context Protocol (MCP) server enabling AI assistants to write, optimize, format, and publish technical documentation and blog posts directly to Dev.to with zero browser friction.",
+    categories: ["AI & Automation", "Cloud & Systems"],
+    tags: ["Python", "Model Context Protocol", "Claude API", "Dev.to API"],
+    image: "/images/projects/devto.webp",
+    metrics: "Zero-Click Publishing • Full MCP Spec",
+    githubUrl: "https://github.com/Dineshv0311",
+    liveUrl: "https://github.com/Dineshv0311",
+    featured: false,
+    highlights: [
+      "Built against the official Model Context Protocol (MCP) client-server spec",
+      "Seamless bridge between LLMs (Claude) and Dev.to developer ecosystem",
+      "Automates frontmatter parsing, tag indexing, and draft/publication status toggling",
     ],
   },
 ];
