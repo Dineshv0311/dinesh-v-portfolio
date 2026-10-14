@@ -7,20 +7,20 @@ import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-black text-white selection:bg-red selection:text-black font-mono">
-      {/* Brutalist Matrix / Terminal Navbar */}
+    <main className="relative min-h-screen bg-[#07070A] text-white selection:bg-cobalt selection:text-white font-sans antialiased">
+      {/* Modernist Editorial Navbar with Corner Avatar */}
       <Navbar />
 
-      {/* Hero with Digital Rain Canvas & Binary Glitch Portrait */}
+      {/* Classy Hero with Grainy Cobalt Aura Background & Typographic Motion */}
       <Hero />
 
-      {/* Brutalist About Section with Georgia Quote & Peel Off Specs */}
+      {/* About & Engineering Philosophy */}
       <About />
 
-      {/* Interactive Cyberpunk Projects Showcase with Live Telemetry */}
+      {/* Selected Commercial Case Studies */}
       <Projects />
 
-      {/* Monumental GET IN TOUCH Terminal & Footer */}
+      {/* Minimalist Contact & Telemetry */}
       <Footer />
     </main>
   );

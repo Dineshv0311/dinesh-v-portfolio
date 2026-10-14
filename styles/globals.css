@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --bg-color: #0D0208;
+    --bg-color: #07070A;
     --text-color: #FFFFFF;
-    --color-red: #FF0000;
+    --color-cobalt: #0022FF;
   }
 
   * {
@@ -15,65 +15,57 @@
 
   html {
     scroll-behavior: smooth;
-    background-color: #000000;
+    background-color: #07070A;
   }
 
   body {
-    background-color: #000000;
+    background-color: #07070A;
     color: #FFFFFF;
     overflow-x: hidden;
-    font-family: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   ::selection {
-    background: #FF0000;
-    color: #000000;
+    background: #0022FF;
+    color: #FFFFFF;
   }
 }
 
-/* Custom Minimalist Scrollbar */
+/* Custom Minimalist Classy Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #07070A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF0000;
-  border-radius: 0px;
+  background: #1F2232;
+  border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
+  background: #0022FF;
 }
 
-/* Brutalist Button & Card Utilities */
-.brutalist-card {
-  border: 1px solid #000000;
-  background-color: #FFFFFF;
-  color: #000000;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+/* Subtle Film Grain Texture Overlay */
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
 }
 
-.brutalist-card:hover {
-  transform: translate(6px, -6px);
-  background-color: #FFFFFF;
+/* Classy Editorial Card */
+.editorial-card {
+  background: rgba(13, 14, 18, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.brutalist-button {
-  border: 1px solid #000000;
-  background-color: #FF0000;
-  color: #000000;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.brutalist-button:hover {
-  background-color: #FFFFFF;
-  color: #000000;
+.editorial-card:hover {
+  border-color: rgba(0, 34, 255, 0.5);
+  transform: translateY(-2px);
 }
