@@ -10,31 +10,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cobalt: {
-          DEFAULT: "#0022FF",
-          50: "#EEF2FF",
-          100: "#E0E7FF",
-          200: "#C7D2FE",
-          300: "#93A5FD",
-          400: "#506EF9",
-          500: "#0022FF",
-          600: "#001BD6",
-          700: "#0015A8",
-          800: "#001080",
-          900: "#000B57",
-          aura: "#0A21C0",
-          deep: "#050814",
+        red: {
+          DEFAULT: "#FF0000",
+          600: "#DC2626",
+          700: "#B91C1C",
+          800: "#991B1B",
+          900: "#7F1D1D",
         },
-        obsidian: {
-          DEFAULT: "#07070A",
-          surface: "#0D0E12",
-          card: "#12131A",
-          border: "rgba(255, 255, 255, 0.1)",
+        matrix: {
+          bg: "#0D0208",
+          dark: "#050002",
+          green: "#00FF66",
+          dim: "#22C55E",
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
-        mono: ["var(--font-jetbrains)", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
+        sans: ["var(--font-inter)", "Helvetica", "Arial", "sans-serif"],
+        mono: ["var(--font-jetbrains)", "Courier New", "monospace"],
         serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
       },
     },

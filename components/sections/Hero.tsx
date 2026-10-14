@@ -2,119 +2,128 @@
 
 import React from "react";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Sparkles } from "lucide-react";
-import { MotionText, FadeInView } from "../ui/MotionText";
+import { MatrixRainCanvas } from "../ui/MatrixRainCanvas";
+import { ScrambleText } from "../ui/ScrambleText";
+import { ArrowUpRight, Terminal } from "lucide-react";
 
 export const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[92vh] sm:min-h-screen w-full flex flex-col justify-between pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#07070A]"
+      className="relative min-h-screen w-full bg-[#0D0208] text-white flex items-center overflow-hidden pt-24 pb-16 px-4 sm:px-6 lg:px-8 font-mono"
     >
-      {/* High-Resolution Grainy Cobalt Aura Background from Uploaded Assets */}
-      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        <Image
-          src="/images/aesthetic/clean_aura_wide.jpg"
-          alt="Cobalt Aura Background"
-          fill
-          priority
-          className="object-cover object-center opacity-45 mix-blend-screen filter contrast-125"
-        />
-        {/* Subtle vignette fade */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#07070A] via-transparent to-[#07070A]/80" />
-        <div className="absolute inset-0 grain-overlay pointer-events-none" />
-      </div>
+      {/* Background Matrix Digital Rain in Red / White Monochrome */}
+      <MatrixRainCanvas className="absolute inset-0 w-full h-full opacity-70" />
 
-      {/* Main Hero Content Area */}
-      <div className="relative z-10 max-w-6xl mx-auto w-full my-auto flex flex-col items-start pt-6">
-        {/* Editorial Collection Tag matching Pinterest reference */}
-        <FadeInView delay={0.1}>
-          <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-white/[0.05] border border-white/10 backdrop-blur-md mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-cobalt animate-pulse" />
-            <span className="text-[11px] font-sans tracking-widest text-white/80 uppercase">
-              2026 Collection / Portfolio
-            </span>
-            <span className="text-white/20">•</span>
-            <span className="text-[11px] text-white/60 font-sans">
-              Chennai, India
-            </span>
+      {/* Main Container: Asymmetric 2-Column Layout (Image Offset to the Right, NOT Centered) */}
+      <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center my-auto">
+        {/* Left Column: Bold Typography & Actions */}
+        <div className="lg:col-span-7 flex flex-col items-start text-left space-y-6">
+          {/* Status Tag */}
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-black/80 border border-white/20 text-[11px] tracking-widest uppercase text-white/90">
+            <span className="w-2 h-2 rounded-full bg-red animate-pulse" />
+            <span className="text-red font-bold">VIT CHENNAI</span>
+            <span className="text-white/30">//</span>
+            <span>AI & SYSTEMS ENGINEER</span>
+            <span className="text-white/30">•</span>
+            <span className="text-red font-bold">OPEN TO WORK</span>
           </div>
-        </FadeInView>
 
-        {/* Video-Inspired Smooth Typographic Entrance */}
-        <div className="space-y-1 sm:space-y-2 mb-6">
-          <MotionText delay={0.2} className="block">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.05]">
-              I Build Web Platforms
-            </h1>
-          </MotionText>
-          <br className="hidden sm:inline" />
-          <MotionText delay={0.35} className="block">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white/90 leading-[1.05]">
-              That Win Clients<span className="text-cobalt">.</span>
-            </h1>
-          </MotionText>
-        </div>
-
-        {/* Editorial Story Subtext */}
-        <FadeInView delay={0.5} className="max-w-2xl mb-10">
-          <p className="text-base sm:text-lg md:text-xl text-white/70 font-sans font-normal leading-relaxed">
-            From architectural concept to production deployment — clean code, fast delivery, and scalable systems built for ambitious businesses.
-          </p>
-        </FadeInView>
-
-        {/* Classy Action CTAs & Collaborative Pills from Reference Video */}
-        <FadeInView delay={0.65} className="flex flex-wrap items-center gap-4 sm:gap-6 mb-12">
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-black hover:bg-cobalt hover:text-white font-medium text-sm tracking-wide transition-all duration-300 shadow-md group"
-          >
-            <span>View Selected Work</span>
-            <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-          </a>
-
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white/[0.05] hover:bg-white/[0.12] text-white border border-white/15 font-medium text-sm tracking-wide transition-all duration-300"
-          >
-            <span>Get in Touch</span>
-            <ArrowUpRight className="w-4 h-4 text-white/70" />
-          </a>
-
-          {/* Interactive Collaborator Tag (Inspired by Video 'Robert' / 'Sarah' tags) */}
-          <div className="hidden lg:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cobalt/20 border border-cobalt/40 text-xs text-white">
-            <div className="w-2 h-2 rounded-full bg-cobalt" />
-            <span className="font-medium">Dinesh V.</span>
-            <span className="text-white/40">//</span>
-            <span className="text-white/80">Available for Freelance</span>
+          {/* Big Scramble Glitch Name */}
+          <div className="w-full">
+            <ScrambleText
+              text="DINESH V"
+              duration={1.2}
+              className="text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-black tracking-tighter uppercase leading-none text-white selection:bg-red selection:text-black drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
+            />
           </div>
-        </FadeInView>
-      </div>
 
-      {/* Bottom Metadata Divider Line matching Image 4 (Public Analog) */}
-      <FadeInView delay={0.8} className="relative z-10 max-w-6xl mx-auto w-full pt-6 border-t border-white/[0.08]">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-sans text-white/50 tracking-wide uppercase">
-          <div>
-            <span className="block text-white/30 text-[10px] mb-0.5">DISCIPLINE</span>
-            <span className="text-white/80 font-medium">Full-Stack & Systems</span>
+          {/* Subtitle / Specialization */}
+          <div className="space-y-2 max-w-xl">
+            <p className="text-sm sm:text-base font-bold tracking-[0.2em] text-red uppercase">
+              FULLSTACK ARCHITECT // SYSTEMS & AI SOLUTIONS
+            </p>
+            <p className="font-sans text-sm sm:text-base text-white/70 leading-relaxed">
+              Engineering high-converting commercial web platforms, scalable cloud microservices, and custom AI tools. Clean code, fast delivery, zero technical debt.
+            </p>
           </div>
-          <div>
-            <span className="block text-white/30 text-[10px] mb-0.5">EDUCATION</span>
-            <span className="text-white/80 font-medium">VIT Chennai (AI & Robotics)</span>
+
+          {/* Action CTAs */}
+          <div className="flex flex-wrap items-center gap-4 text-xs pt-2">
+            <a
+              href="#projects"
+              className="bg-red text-black font-bold px-6 py-3.5 uppercase tracking-wider hover:bg-white hover:text-black transition-all flex items-center gap-2 cursor-pointer shadow-[4px_4px_0px_0px_#FFFFFF]"
+            >
+              <span>EXPLORE PROJECTS</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+            <a
+              href="#contact"
+              className="border border-white/30 bg-black/40 text-white font-bold px-6 py-3.5 uppercase tracking-wider hover:border-red hover:text-red transition-all cursor-pointer"
+            >
+              [ GET IN TOUCH ]
+            </a>
           </div>
-          <div>
-            <span className="block text-white/30 text-[10px] mb-0.5">LOCATION</span>
-            <span className="text-white/80 font-medium">Chennai, India • GMT +5:30</span>
-          </div>
-          <div>
-            <span className="block text-white/30 text-[10px] mb-0.5">STATUS</span>
-            <span className="text-cobalt-300 font-medium flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-cobalt animate-pulse" />
-              Taking Commissions
-            </span>
+
+          {/* Bottom Telemetry Bar */}
+          <div className="pt-6 border-t border-white/10 w-full flex flex-wrap items-center gap-6 text-[10px] text-white/40 uppercase tracking-widest">
+            <div>
+              <span className="text-white/60">LOCATION: </span>
+              <span className="text-white font-bold">CHENNAI, INDIA</span>
+            </div>
+            <div>
+              <span className="text-white/60">DISCIPLINE: </span>
+              <span className="text-red font-bold">FULL-STACK & AI</span>
+            </div>
+            <div>
+              <span className="text-white/60">LATENCY: </span>
+              <span className="text-white font-bold">&lt;50MS</span>
+            </div>
           </div>
         </div>
-      </FadeInView>
+
+        {/* Right Column: Portrait in High-Contrast Brutalist Cyber Frame (NOT Centered) */}
+        <div className="lg:col-span-5 flex justify-center lg:justify-end w-full">
+          <div className="relative w-full max-w-sm sm:max-w-md border-2 border-white/20 bg-black p-3 shadow-[8px_8px_0px_0px_#FF0000] group">
+            {/* Top Frame Telemetry */}
+            <div className="flex items-center justify-between text-[10px] text-white/50 pb-2 border-b border-white/10 mb-2">
+              <span className="flex items-center gap-1.5 font-bold text-red">
+                <Terminal className="w-3 h-3" />
+                DV_PORTRAIT.RAW
+              </span>
+              <span className="text-white/70">● ACTIVE_FEED</span>
+            </div>
+
+            {/* Portrait Image Container */}
+            <div className="relative w-full aspect-[4/5] sm:aspect-square overflow-hidden bg-[#0D0208] border border-white/10">
+              <Image
+                src="/images/myself.jpg"
+                alt="Dinesh V - Full-Stack & AI Solutions Developer"
+                fill
+                priority
+                className="object-cover object-top filter contrast-125 brightness-95 grayscale hover:grayscale-0 transition-all duration-500"
+              />
+              {/* Corner Bracket Accents in Red */}
+              <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-red pointer-events-none" />
+              <div className="absolute top-2 right-2 w-3 h-3 border-t-2 border-r-2 border-red pointer-events-none" />
+              <div className="absolute bottom-2 left-2 w-3 h-3 border-b-2 border-l-2 border-red pointer-events-none" />
+              <div className="absolute bottom-2 right-2 w-3 h-3 border-b-2 border-r-2 border-red pointer-events-none" />
+
+              {/* Bottom Subtle Gradient */}
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none" />
+            </div>
+
+            {/* Bottom Frame Telemetry */}
+            <div className="flex items-center justify-between text-[9px] text-white/40 pt-2 border-t border-white/10 mt-2 uppercase">
+              <span>SYS_ID: DV-2026</span>
+              <span className="text-red font-bold">CHENNAI // GMT +5:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Seamless Fade To Black for Next Section */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black via-black/80 to-transparent pointer-events-none z-20" />
     </section>
   );
 };
